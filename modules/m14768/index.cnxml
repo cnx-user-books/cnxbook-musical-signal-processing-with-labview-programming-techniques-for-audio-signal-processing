@@ -1,0 +1,61 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Arrays in LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14768</md:content-id>
+  <md:title>Arrays in LabVIEW</md:title>
+  <md:abstract>Learn how to create and manipulate arrays, perform mathematical
+operations on them, and use spreadsheets to read and write arrays to the
+file system.</md:abstract>
+  <md:uuid>d0e57f23-9ead-4e19-8da1-0199da29bf4e</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="example">
+      <link url="http://cnx.org/content/m12220/latest/" strength="1">LabVIEW Arrays</link>
+    </link-group>
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m12225/latest/" strength="1">Summary, Tips and Tricks on Arrays</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id-489993866014">
+      <title>Overview</title>
+      <para id="id12689810">Arrays are a fundamental data type for signal processing. LabVIEW offers a complete set of techniques to create and manipulate arrays, and to perform mathematical and signal processing operations on arrays. This module will acquaint you with the basic techniques for working with arrays.</para>
+    </section>
+    <section id="id-841982672789">
+      <title>Creating Arrays</title>
+      <para id="id12301677">The following video screencast describes how to create arrays on the front panel and on the block diagram. The elements of an array can be edited and modified directly, a suitable technique when the array is relatively small.</para>
+      <figure id="id12425340"><title><link url="https://youtu.be/LJlxZIlUGRM" window="new">https://youtu.be/LJlxZIlUGRM</link> (8:22)</title><media id="eip-idm384565344" display="block" alt="Array visualized as a waveform graph">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/LJlxZIlUGRM?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] Creating arrays
+</caption></figure></section>
+    <section id="id-418924766625">
+      <title>Manipulating Arrays</title>
+      <para id="id8961489">The next video screencast explains essential array manipulations for signal processing tasks, including: determining the <term>dimensions</term> of an array, retrieving individual elements, rows, columns, or other <term>subarrays</term>, appending (concatenating) arrays, and <term>reshaping</term> arrays.</para>
+      <figure id="id11960202"><title><link url="https://youtu.be/o3q_bZb1zX0" window="new">https://youtu.be/o3q_bZb1zX0</link> (11:01)</title><media id="eip-idm456993712" display="block" alt="LabVIEW block diagram with arrays">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/o3q_bZb1zX0?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] Manipulating arrays
+</caption></figure></section>
+    <section id="id-246854493519">
+      <title>Mathematical Operations with Arrays</title>
+      <para id="id11346174">Signal processing operations commonly operate on all of the array elements at once. For example, adding a scalar constant to an array implies a loop operation in which the constant is added to each element of the array.</para>
+      <para id="id11218974">The following screencast video describes several techniques for performing mathematical operations on arrays. Important side effects (such as what happens when two arrays of different lengths are added together) are discussed. The <term>Ramp Pattern</term> subVI is also described as a method to create a time basis for mathematical functions such as the <term>exponential</term>.</para>
+      <figure id="id12179828"><title><link url="https://youtu.be/JjlOld7ASSs" window="new">https://youtu.be/JjlOld7ASSs</link> (7:20)</title><media id="eip-idm421789808" display="block" alt="Perform square root operation on an array">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/JjlOld7ASSs?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] Performing mathematical operations with arrays
+</caption></figure></section>
+    <section id="id-943666986456">
+      <title>Arrays and Spreadsheets</title>
+      <para id="id10735097">Spreadsheets are often used as a data storage mechanism by other applications. The next screencast video shows you how to retrieve an array from a comma-separated-values (CSV-format) spreadsheet, and how to create your own CSV-format spreadsheet from an existing array within LabVIEW.</para>
+      <figure id="id10440982"><title><link url="https://youtu.be/15BLe5c1BI8" window="new">https://youtu.be/15BLe5c1BI8</link> (5:38)</title><media id="eip-idm1226474288" display="block" alt="Create an array from a spreadsheet">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/15BLe5c1BI8?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] Retrieving arrays from a spreadsheet; saving arrays to a spreadsheet
+</caption></figure></section>
+  </content>
+</document>

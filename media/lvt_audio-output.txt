@@ -1,0 +1,24 @@
+Title: Audio Output Using LabVIEW's "Play Waveform" Express VI 
+
+Summary: Learn how to listen to a 1-D array that represents an audio signal.
+
+Keywords (one per line): 
+audio
+Play Waveform Express VI
+Build Waveform
+Sinusoidal source
+Normalized frequency
+soundcard
+LabVIEW
+
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_audio-output.html">
+          <param name="thumbnail" value="lvt_audio-output.png"/>
+        </media>
+<caption>
+   [video] Listen to an audio signal (1-D array) on the soundcard
+</caption>

@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Audio Sources in LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14770</md:content-id>
+  <md:title>Audio Sources in LabVIEW</md:title>
+  <md:abstract>Learn how to use the 'Sine Wave' subVI from the Signal Processing
+palette as an audio source.</md:abstract>
+  <md:uuid>70a5a7cc-6614-4ef6-8513-7040f4e96336</md:uuid>
+</metadata>
+  <content>
+    <section id="id-409347259773">
+      <title>Overview</title>
+      <para id="id8911195">The<term> Sine Wave</term> subVI in the Signal Processing palette is a useful way to produce a sinusoidal audio signal. The screenscast video will acquaint you with the Sine Wave subVI, especially its requirement for <term>normalized frequency</term>. This subVI is one of several <term>re-entrant</term> signal generators, meaning that they have the ability to “pick up where they left off;” that is, they can maintain continuity in their output across execution runs and loop iterations.</para>
+      <figure id="id8904060"><title><link url="https://youtu.be/FKEQPPsFq2A" window="new">https://youtu.be/FKEQPPsFq2A</link> (8:13)</title><media id="eip-idm725606928" display="block" alt="Insert alt text here">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/FKEQPPsFq2A?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] Sinewave source for audio applications
+</caption></figure></section>
+  </content>
+</document>

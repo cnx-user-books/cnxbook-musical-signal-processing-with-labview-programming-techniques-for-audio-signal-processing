@@ -1,0 +1,24 @@
+Title: Audio Sources in LabVIEW 
+
+Summary: Learn how to use the 'Sine Wave' subVI from the Signal Processing
+palette as an audio source.
+
+Keywords (one per line): 
+sine wave
+sinusoid
+audio source
+re-entrant
+normalized frequency
+LabVIEW
+
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_audio-sources-sinewave.html">
+          <param name="thumbnail" value="lvt_audio-sources-sinewave.png"/>
+        </media>
+<caption>
+   [video] Sinewave source for audio applications
+</caption>

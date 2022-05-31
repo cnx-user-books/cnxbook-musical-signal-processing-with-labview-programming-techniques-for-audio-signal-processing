@@ -1,0 +1,76 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Getting Started with LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14764</md:content-id>
+  <md:title>Getting Started with LabVIEW</md:title>
+  <md:abstract>Learn about the LabVIEW programming environment, create your first
+virtual instrument (VI), learn about LabVIEW's dataflow programming paradigm,
+become acquainted with some of LabVIEW's data types, and review some useful
+debugging techniques.</md:abstract>
+  <md:uuid>ba1047b1-907d-45a7-b379-a1dba0f61ea5</md:uuid>
+</metadata>
+  <content>
+    <section id="id-0389647309561">
+      <title>Overview</title>
+      <para id="id9210202">Welcome to the exciting world of <term>LabVIEW</term> for audio and signal processing applications! This module contains five <term>screencast</term> videos, meaning that the videos were captured directly from my computer screen. As I operate the LabVIEW software, I explain each step and discuss what is going on. After you watch each of the videos, you will possess a good idea of some fundamental LabVIEW concepts, including:</para>
+      <list id="id11435932" list-type="bulleted"><item>Front panel and block diagram programming paradigm</item>
+        <item>Dataflow paradigm</item>
+        <item>Data types</item>
+<item>Broken wires</item>
+        <item>Debugging techniques</item>
+      </list>
+    </section>
+    <section id="id-520924716255">
+      <title>A Bit of History</title>
+      <para id="id8485466">In 1986 National Instruments Corporation released the first version of LabVIEW (<emphasis>Lab</emphasis>oratory <emphasis>V</emphasis>irtual <emphasis>I</emphasis>nstrument <emphasis>E</emphasis>ngineering <emphasis>W</emphasis>orkbench), which was designed to help engineers use a computer (the Apple Macintosh) to control and gather data from electronic instrumentation (voltmeters, oscilloscopes, and the like) all interconnected by the standard General Purpose Instrumentation Bus, or GP-IB. From its inception, LabVIEW programming was <term>graphical</term> in nature. Instead of writing a text file and compiling it to an executable, you connect various elements such as <term>controls</term>, <term>indicators</term>, <term>nodes</term> and <term>subVIs</term> together with <term>wires</term>, and in this way create a <term>block</term><term>diagram</term>. The controls and indicators reside on the <term>front panel</term>, which looks just a traditional electronic instrument, i.e., it can have knobs, sliders, buttons, and display panels. The complete application is called a <term>virtual instrument</term>, or <term>VI</term> for short.</para>
+      <para id="id5643342">LabVIEW has since evolved into a complete programming environment; anything that you can imagine can probably be implemented in LabVIEW. Recent versions of LabVIEW have added a full suite of tools for doing signal processing, and since soundcard operations are provided, it becomes natural to develop audio signal processing applications in LabVIEW.</para>
+      <para id="id10659944">LabVIEW’s interactive front panel offers a unique opportunity to explore signal processing concepts in real time. As you work your way through other modules in this series, you will learn how to implement your own applications whose user interface consists of knobs, sliders and switches that can adjust processing parameters <emphasis>while you listen</emphasis> to the results.</para>
+    </section>
+    <section id="id-487243684992">
+      <title>Your First Virtual Instrument (VI)</title>
+      <para id="id5018998">Watch the following screencast video to learn how to connect front panel <term>controls</term> and <term>indicators</term> together. You will also learn how to use the <term>While Loop</term> structure to make your VI operate continuously until you press a “STOP” button on the front panel.</para>
+      <figure id="id11737947"><title><link url="https://youtu.be/eAoiu5KEPjU" window="new">https://youtu.be/eAoiu5KEPjU</link> (8:00)</title><media id="eip-idm472323408" display="block" alt="LabVIEW opening screen">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/eAoiu5KEPjU?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] Creating your first "VI" (Virtual Instrument)
+</caption></figure></section>
+    <section id="id-0252408188439">
+      <title>The Dataflow Concept</title>
+      <para id="id8073359">The notion of LabVIEW’s <term>dataflow</term> programming paradigm must be grasped <emphasis>immediately</emphasis> in order for you to make forward progress learning about LabVIEW to create your own applications. Dataflow programming means that valid data must be present at <emphasis>all</emphasis> of the input <term>terminals</term> on a node (or subVI) before that node (or subVI) will produce valid data on its output terminals. Moreover, the node (or subVI) does <emphasis>not</emphasis> continually process its inputs data unless it is embedded in some sort of looping structure.</para>
+      <para id="id11360226">Click on the following animation of the dataflow concept to watch a screencast video that explains and further explores the dataflow programming concept.</para>
+      <figure id="id10264883"><title><link url="https://youtu.be/ndLmegOs4_Q" window="new">https://youtu.be/ndLmegOs4_Q</link> (2:43)</title><media id="eip-idm419244832" display="block" alt="LabVIEW block diagram with 'Highlight Execution' mode enabled">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/ndLmegOs4_Q?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] Understanding the LabVIEW "dataflow" paradigm
+</caption></figure></section>
+    <section id="id-619543948908">
+      <title>Data Types</title>
+      <para id="id9711845">LabVIEW supports a broad range of <term>data types</term>, including <term>numeric</term>, <term>Boolean</term>, and <term>string</term>. The following screencast video will acquaint you with the floating point and integer styles of numeric data type, as well as the Boolean data type. The screencast explains the significance of the <term>coercion indicator</term> -- the red dot that flags a mismatch on data types applied to the input of a node or subVI -- as well as <term>data type conversion</term> nodes that you can use to intentionally convert a value from one data type to another.</para>
+      <figure id="id8775130"><title><link url="https://youtu.be/dxDTcXDcDzk" window="new">https://youtu.be/dxDTcXDcDzk</link> (3:50)</title><media id="eip-idm382208720" display="block" alt="LabVIEW block diagram with float, integer, and Boolean datatypes">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/dxDTcXDcDzk?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] Datatypes: Numeric and Boolean
+</caption></figure></section>
+    <section id="id-587522687904">
+      <title>Broken Wires</title>
+      <para id="id9554126"><term>Broken wires</term> indicate an error that must be corrected before your VI will run. Broken wires result from a number of causes, and it is important to understand why the wire is broken and how to correct the situation. The following screencast describes broken wires in detail.</para>
+      <figure id="id11238530"><title><link url="https://youtu.be/CHxzsOGK-5A" window="new">https://youtu.be/CHxzsOGK-5A</link> (5:06)</title><media id="eip-idm362907344" display="block" alt="LabVIEW block diagram with broken wire">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/CHxzsOGK-5A?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] Understanding and correcting broken wires 
+</caption></figure></section>
+    <section id="id-451825813514">
+      <title>Debugging Techniques</title>
+      <para id="id2860256">As you begin learning LabVIEW so that you can develop your own VIs, you will find the debugging techniques described by the next screencast video helpful. Topics include adding additional indicators, using the <term>Highlight Execution</term> feature, using the <term>Retain Wire Values</term> feature, <term>single-stepping</term>, viewing wire values using <term>probes</term>, and creating <term>breakpoints</term> to pause execution when new data is available on a wire.</para>
+      <figure id="id9256975"><title><link url="https://youtu.be/maBLAzL4QUA" window="new">https://youtu.be/maBLAzL4QUA</link> (4:38)</title><media id="eip-idm562842608" display="block" alt="LabVIEW block diagram with 'Start Single Stepping' highlighted">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/maBLAzL4QUA?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] Basic debugging techniques
+</caption></figure></section>
+    <section id="id-41370726949">
+      <title>For Further Study</title>
+      <para id="id10062066">If you are new to LabVIEW, I recommend the excellent text by Robert H. Bishop, <cite><cite-title>Learning with LabVIEW 8 (Pearson Prentice Hall, 2007, ISBN 0-13-239025-6)</cite-title></cite>. With this text you can learn basic LabVIEW programming techniques and get a better idea of everything that LabVIEW has to offer.</para>
+      <para id="id7199635">Once you have developed some skill with LabVIEW, consider Peter A. Blume’s text, <cite><cite-title>The LabVIEW Style Book (Prentice Hall 2007, ISBN 0-13-145835-3)</cite-title></cite>. This text covers a wide variety of techniques that will help you to develop robust and well-designed LabVIEW applications. Thomas J. Bress' text <cite><cite-title>Effective LabVIEW Programming (NTS Press 2013, ISBN 978-1-934891-08-7)</cite-title></cite> covers similar ground as Blume's text and includes more step-by-step details and end-of-chapter problems and projects.</para><para id="id11394579">Don’t forget to check out the on-line documentation that is part of your LabVIEW product installation.</para>
+      <para id="id10382087">Visit the <link url="http://www.ni.com/">National Instruments</link> website, including their <link url="http://www.ni.com/academic/">Academic</link> page and the <link url="https://forums.ni.com/">NI Community</link>.</para></section>
+  </content>
+</document>

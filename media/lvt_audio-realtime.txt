@@ -1,0 +1,25 @@
+Title: Real-Time Audio Output in LabVIEW 
+
+Summary: Learn how to set up the framework for your own 
+LabVIEW application that can generate continuous audio output and respond
+to changes on the front panel in real time.
+
+Keywords (one per line): 
+Sound Output
+configure
+write clear
+real-time audio
+interactive
+LabVIEW
+
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_audio-realtime-output.html">
+          <param name="thumbnail" value="-realtime-output.png"/>
+        </media>
+<caption>
+   [video] Real-time audio output with interactive controls
+</caption>

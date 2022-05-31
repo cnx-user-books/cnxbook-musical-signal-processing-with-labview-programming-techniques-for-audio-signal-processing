@@ -1,0 +1,60 @@
+Title: Getting Started with LabVIEW 
+
+Summary: Learn about the LabVIEW programming environment, create your first
+virtual instrument (VI), learn about LabVIEW's dataflow programming paradigm,
+become acquainted with some of LabVIEW's data types, and review some useful
+debugging techniques.
+
+Keywords (one per line): 
+virtual instrument (VI)
+dataflow
+data types
+debugging
+LabVIEW
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_first-VI.html">
+          <param name="thumbnail" value="lvt_first-VI.png"/>
+        </media>
+<caption>
+   [video] Creating your first "VI" (Virtual Instrument)
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_dataflow-concept.html">
+          <param name="thumbnail" value="lvt_dataflow-concept.png"/>
+        </media>
+<caption>
+   [video] Understanding the LabVIEW "dataflow" paradigm
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_datatypes.html">
+          <param name="thumbnail" value="lvt_datatypes.png"/>
+        </media>
+<caption>
+   [video] Datatypes: Numeric and Boolean
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_broken-wires.html">
+          <param name="thumbnail" value="lvt_broken-wires.png"/>
+        </media>
+<caption>
+   [video] Understanding and correcting broken wires 
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_debugging.html">
+          <param name="thumbnail" value="lvt_debugging.png"/>
+        </media>
+<caption>
+   [video] Basic debugging techniques
+</caption>

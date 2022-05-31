@@ -1,0 +1,36 @@
+Title: Editing Tips for LabVIEW
+
+Summary: Learn how to efficiently create and edit LabVIEW block diagrams
+and front panels.  
+
+Keywords:
+text labels
+icons
+replace
+controls
+constants
+indicators
+clean up wire
+moving
+aligning
+replacing
+broken wires
+distributing objects
+Context Help
+decorations
+Navigation Window
+replicating
+LabVIEW
+
+
+CNXML for figures:
+
+<media type="image/png" src="lvt_editing.html">
+          <param name="thumbnail" value="lvt_editing.png"/>
+        </media>
+<caption>
+   [video] Editing tips for front panels and block diagrams
+</caption>
+
+---------------------------------------
+

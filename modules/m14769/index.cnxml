@@ -1,0 +1,20 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Audio Output Using LabVIEW's "Play Waveform" Express VI</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14769</md:content-id>
+  <md:title>Audio Output Using LabVIEW's "Play Waveform" Express VI</md:title>
+  <md:abstract>Learn how to play an audio signal (1-D array) using your computer's
+soundcard.</md:abstract>
+  <md:uuid>877790d2-349e-4611-aca9-392bf28151d9</md:uuid>
+</metadata>
+  <content>
+    <section id="id-0336582312188">
+      <title>Overview</title>
+      <para id="id11944869">A 1-D array representing an audio signal can be played directly by the computer’s soundcard using the <term>Play Waveform</term> Express VI. The screencast video shows how to listen to an audio signal source (a sinusoid in this example). The 1-D array must first be converted to the <term>waveform</term> data type using the <term>Build Waveform</term> node.</para>
+      <figure id="id10026381"><title><link url="https://youtu.be/gKUveTJqppQ" window="new">https://youtu.be/gKUveTJqppQ</link> (4:17)</title><media id="eip-idm679274128" display="block" alt="LabVIEW block diagram with sine waveform connected to 'Play Waveform' Express VI">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/gKUveTJqppQ?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] Listen to an audio signal (1-D array) on the soundcard
+</caption></figure></section>
+  </content>
+</document>

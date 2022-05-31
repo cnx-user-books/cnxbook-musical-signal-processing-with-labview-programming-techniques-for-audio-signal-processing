@@ -1,0 +1,30 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Create a SubVI in LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14767</md:content-id>
+  <md:title>Create a SubVI in LabVIEW</md:title>
+  <md:abstract>A "subVI" is equivalent to a function, subroutine, or method in other
+programming languages, and useful for encapsulating code that will be reused
+multiple time. A subVI is also used to develop hierarchical programs.</md:abstract>
+  <md:uuid>5b995b1f-0239-4fa4-8423-0b6e53a75362</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/m12210/latest/" strength="3">Convert a portion of a VI's block diagram to a subVI</link>
+      <link url="http://cnx.org/content/m12300/latest/" strength="2">Opening subVI panels when a VI runs</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <para id="id11791947">A <term>subVI</term> is the LabVIEW equivalent to “functions,” “subroutines,” and “methods” in other programming languages. You can easily create a subVI that can be used reused many times in other VIs; editing the subVI one time updates its behavior for all VIs that use the subVI, which simplifies program design and maintenance. Moreover, the subVI forms the basic method by which you can create a hierarchical program.</para>
+    <para id="id9227503">The screencast video below details the necessary steps to convert a conventional block diagram into a subVI by adding a <term>connector pane</term> and an <term>icon</term>. These two elements enable the block diagram to appear as an element on another block diagram with a connection pattern specific to the requirements of the task performed by the subVI. In addition, you can set the <term>VI Description</term> (part of the <term>VI Properties</term>) of your subVI so that hovering your cursor over your subVI reveals a helpful description of its behavior.</para>
+    <figure id="id11580665"><title><link url="https://youtu.be/Z5SsOLSJzJc" window="new">https://youtu.be/Z5SsOLSJzJc</link> (4:45)</title><media id="eip-idm349818416" display="block" alt="Editing the icon of a new LabVIEW subVI">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/Z5SsOLSJzJc?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] LabVIEW Techniques: Create a subVI from a block diagram
+</caption></figure></content>
+</document>

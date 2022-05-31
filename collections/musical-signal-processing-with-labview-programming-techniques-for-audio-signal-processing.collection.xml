@@ -1,0 +1,29 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10440</md:content-id>
+    <md:title>Musical Signal Processing with LabVIEW -- Programming Techniques for Audio Signal Processing</md:title>
+    <md:language>en</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>8bb5d4ee-b298-43c1-9921-861cfea09db3</md:uuid>
+<md:slug>musical-signal-processing-with-labview-programming-techniques-for-audio-signal-processing</md:slug>
+</metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Programming Tutorials</md:title>
+      <col:content/>
+    </col:subcollection>
+    <col:module document="m14764"/>
+    <col:module document="m14765"/>
+    <col:module document="m14766"/>
+    <col:module document="m14767"/>
+    <col:module document="m14768"/>
+    <col:subcollection>
+      <md:title>Audio Input and Output</md:title>
+      <col:content/>
+    </col:subcollection>
+    <col:module document="m14769"/>
+    <col:module document="m14770"/>
+    <col:module document="m14771"/>
+    <col:module document="m14772"/>
+  </col:content>
+</col:collection>

@@ -1,0 +1,26 @@
+Title: Create a SubVI in LabVIEW
+
+Summary: A "subVI" is equivalent to a function, subroutine, or method in other
+programming languages, and useful for encapsulating code that will be reused
+multiple time. A subVI is also used to develop hierarchical programs.  
+
+Keywords:
+subVI
+icon editor
+connector pane
+terminals
+LabVIEW
+
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_subvi.html">
+          <param name="thumbnail" value="lvt_subvi.png"/>
+        </media>
+<caption>
+   [video] LabVIEW Techniques: Create a subVI from a block diagram
+</caption>
+
+---------------------------------------

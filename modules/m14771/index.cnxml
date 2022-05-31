@@ -1,0 +1,52 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Reading and Writing Audio Files in LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14771</md:content-id>
+  <md:title>Reading and Writing Audio Files in LabVIEW</md:title>
+  <md:abstract>Learn how to use LabVIEW to retrieve an audio signal from a
+WAV-format file, and how to save an audio signal that you have created 
+to a WAV-format file.</md:abstract>
+  <md:uuid>007678e8-a65f-4f03-8637-8505b0bb30c7</md:uuid>
+</metadata>
+  <content>
+    <section id="id-111458264949">
+      <title>Overview</title>
+      <para id="id10797191">LabVIEW offers a variety of ways to read and write audio files in WAV format. After completing this module you will be able to use the <term>Simple Read</term> and <term>Simple Write</term> subVIs located in the “Programming | Graphics &amp; Sound | Sound | Files” palette to retrieve an audio signal as a 1-D array from a .wav file, and also to save a 1-D array that represents an audio signal to a .wav file. Additional points covered include scaling your audio signal to have a maximum absolute value of one before saving as an audio file, and how to create a two-channel (stereo) audio file.</para>
+    </section>
+    <section id="id-404926012313">
+      <title>Retrieve an Audio Signal from a .wav File</title>
+      <para id="id10766199">The <term>Sound File Simple Read</term> subVI accepts a filename for an audio file in .wav format and returns a waveform data type. You can read mono or stereo files, and also determine information such as the audio signal’s sampling frequency and its total number of samples.</para>
+      <para id="id8832967">The following video screencast shows how to use <term>Simple Read</term> to retrieve the audio signal as an array data type that can be used as a signal input for your own VIs. You may want to start LabVIEW now, then follow along to create your own version of the VI pictured below. If so, you will need the two audio files referenced in the screencast: <link resource="tone-noise.wav">tone-noise.wav</link> and <link resource="left-right.wav">left-right.wav</link>.</para>
+      <figure id="id12773478"><title><link url="https://youtu.be/gKTu-7I0JyM" window="new">https://youtu.be/gKTu-7I0JyM</link> (6:31)</title><media id="eip-idm681206400" display="block" alt="Insert alt text here">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/gKTu-7I0JyM?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] LabVIEW Techniques: Retrieve an audio signal from a .wav file
+</caption></figure></section>
+    <section id="id-282471867645">
+      <title>Save an Audio Signal to a .wav File</title>
+      <para id="id9829636">The <term>Sound File Simple Write</term> subVI accepts a signal in waveform data type and a filename and stores the signal as a .wav file. You can set the number of bits per sample (16 is recommended for best fidelity). You must ensure that your signal values lie in the range -1 to +1, otherwise other applications may not be able to read your .wav file properly.</para>
+      <para id="id11323168">The next video screencast shows how to use <term>Simple Write</term> to save an existing 1-D array that represents an audio signal to a .wav file. The screencast also covers some not-so-obvious data-type transformations required to successfully create your .wav file. You may want to start LabVIEW now, then follow along to create your own version of the VI pictured below. If so, you will need the audio file referenced in the screencast: <link resource="tone-noise.wav">tone-noise.wav</link>.</para>
+      <figure id="id11844406"><title><link url="https://youtu.be/TN76fCi1yL8" window="new">https://youtu.be/TN76fCi1yL8</link> (5:12)</title><media id="eip-idm730140768" display="block" alt="Insert alt text here">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/TN76fCi1yL8?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] LabVIEW Techniques: Save an audio signal to a .wav file
+</caption></figure></section>
+    <section id="id-975389978352">
+      <title>Scale Your Audio Before Saving to a .wav File</title>
+      <para id="id9810496">As mentioned earlier, you must ensure that all of the samples in your signal lie in the range -1 to +1. It is easy to create signals that exceed this range, especially when you add multiple signals together.</para>
+      <para id="id11546544">The next screencast illustrates how <term>Quick Scale</term> is an easy way to scale your 1-D array such that the maximum absolute value is always one; <term>Quick Scale</term> is located in the “Signal Processing | Sig Operation” palette, and should be used as the last step before converting to the waveform data type.</para>
+      <figure id="id12835122"><title><link url="https://youtu.be/Dz_e83Ob1LA" window="new">https://youtu.be/Dz_e83Ob1LA</link> (3:32)</title><media id="eip-idm404467280" display="block" alt="Insert alt text here">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/Dz_e83Ob1LA?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] LabVIEW Techniques: Scale audio signal to +/- 1 range before 
+	saving to a .wav file
+</caption></figure></section>
+    <section id="id-394718022361">
+      <title>Create a Two-Channel (Stereo) .wav File</title>
+      <para id="id11601386">Creating a stereo .wav file requires that you assemble an array of waveforms, one for the left channel and the other for the right channel. Watch the next screencast video to learn how.</para>
+      <figure id="id5528741"><title><link url="https://youtu.be/G3NxCS4jTA0" window="new">https://youtu.be/G3NxCS4jTA0</link> (3:26)</title><media id="eip-idm778877056" display="block" alt="Insert alt text here">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/G3NxCS4jTA0?rel=0" autoplay="false" width="640" height="460"/></media><caption>[video] LabVIEW Techniques: Save a stereo (two-channel) audio signal
+	to a .wav file
+</caption></figure></section>
+  </content>
+</document>

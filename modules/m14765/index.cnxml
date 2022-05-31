@@ -1,0 +1,35 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Editing Tips for LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14765</md:content-id>
+  <md:title>Editing Tips for LabVIEW</md:title>
+  <md:abstract>Learn how to efficiently create and edit LabVIEW block diagrams
+and front panels.</md:abstract>
+  <md:uuid>ccabaaa9-d2c6-4672-8644-4ebdea73881e</md:uuid>
+</metadata>
+  <content>
+    <section id="id-941799110196">
+      <title>Overview</title>
+      <para id="id8904903">LabVIEW offers an extensive range of techniques to create and edit block diagrams and front panels. This screencast video reviews some of the commonly-used editing techniques, including:</para>
+      <list id="id9285833" list-type="bulleted"><item>adding comments and documentation with <term>text labels</term></item>
+        <item>placing front panel terminals as <term>icons</term></item>
+        <item><term>replacing</term> front panel controls and indicators with alternate forms</item>
+        <item>creating <term>controls</term>, <term>constants</term>, and <term>indicators</term> directly at the <term>terminal</term> (using context menu)</item>
+        <item>cleaning up wire routing (<term>Clean Up Wire</term> context menu)</item>
+        <item><term>moving</term> objects using <term>arrow keys</term> (fine positioning) and Shift+arrow keys (larger steps)</item>
+        <item><term>aligning</term> multiple objects</item>
+        <item><term>replacing</term> nodes and subVIs with similar forms</item>
+        <item><term>removing</term> all <term>broken wires</term> (<term>Ctrl+B</term>)</item>
+        <item><term>distributing</term> objects</item>
+        <item>converting front panel <term>controls</term> into <term>constants</term></item>
+        <item>obtaining help: <term>Context Help</term> and detailed <term>help page</term></item>
+        <item>adding <term>decorations</term> (arrows, lines, text labels)</item>
+        <item>viewing the <term>Navigation Window</term></item>
+        <item><term>replicating</term> existing structures</item>
+      </list>
+      <figure id="id8203901"><title><link url="https://youtu.be/8UkF7eREEs8" window="new">https://youtu.be/8UkF7eREEs8</link> (12:42)</title><media id="eip-idm705518080" display="block" alt="Select several block diagram elements">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/8UkF7eREEs8?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] Editing tips for front panels and block diagrams
+</caption></figure></section>
+  </content>
+</document>

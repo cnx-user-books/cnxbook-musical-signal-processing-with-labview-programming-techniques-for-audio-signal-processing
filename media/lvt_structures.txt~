@@ -1,0 +1,43 @@
+Title: Essential Programming Structures in LabVIEW
+
+Summary: Learn how to work with LabVIEW's essential programming structures
+such as for-loops, while-loops, case structure, MathScript node, and
+diagram disable.  
+
+Keywords:
+for loop
+while loop
+case structure
+MathScript node
+diagram disable 
+LabVIEW
+
+
+CNXML for figures:
+
+<media type="image/png" src="lvt_for-loop-arrays.html">
+          <param name="thumbnail" value="lvt_for-loop-arrays.png"/>
+        </media>
+<caption>
+   [video] LabVIEW Techniques: For-Loop structure with arrays as input
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_for-loop-basic.html">
+          <param name="thumbnail" value="lvt_for-loop-basic.png"/>
+        </media>
+<caption>
+   [video] LabVIEW Techniques: For-Loop structure
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_mathscript-node.html">
+          <param name="thumbnail" value="lvt_mathscript-node.png"/>
+        </media>
+<caption>
+   [video] LabVIEW Techniques: MathScript node and MathScript Interactive Window
+</caption>
+
+---------------------------------------

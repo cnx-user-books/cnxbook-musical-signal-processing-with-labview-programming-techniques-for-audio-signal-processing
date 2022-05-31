@@ -1,0 +1,103 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Essential Programming Structures in LabVIEW</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m14766</md:content-id>
+  <md:title>Essential Programming Structures in LabVIEW</md:title>
+  <md:abstract>Learn how to work with LabVIEW's essential programming structures
+such as for-loops, while-loops, case structure, MathScript node, and
+diagram disable.</md:abstract>
+  <md:uuid>630dce16-ef97-47f3-a60f-aef611cb9098</md:uuid>
+</metadata>
+<featured-links>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit below.
+       Changes to the links section in the source will not be saved. -->
+    <link-group type="supplemental">
+      <link url="http://cnx.org/content/col10370/latest/" strength="1">Course: Introduction to LabVIEW MathScript</link>
+    </link-group>
+  <!-- WARNING! The 'featured-links' section is read only. Do not edit above.
+       Changes to the links section in the source will not be saved. -->
+</featured-links>
+<content>
+    <section id="id-42581984581">
+      <title>Overview</title>
+      <para id="id3023984">Signal processing applications developed in LabVIEW make frequent use of basic constructs that are common to all high-level programming languages: for-loops, while-loops, and case structures. A <term>For Loop</term> repeats a block of code a fixed number of times, a <term>While Loop</term> repeats a block of code as long as a particular condition is true, and a <term>Case Structure</term> executes one of several blocks of code depending on some selection criterion. After completing this module you will be able to use these three essential structures in your own LabVIEW VIs.</para>
+      <para id="id3697971">You will also learn about two additional structures. The <term>MathScript Node</term> provides a way for you to develop a customized node whose behavior is defined using the MathScript text-based programming language. MathScript syntax and functions are quite similar to MATLAB, so the MathScript node can help you to leverage any MATLAB programming experience you may have. Lastly, the <term>Diagram Disable</term> structure is useful when you need to temporarily “comment out” a portion of your LabVIEW code.</para>
+      <para id="id3562300">The following diagram highlights the structures on the “Programming | Structures” palette about which you will learn in this module:</para>
+      <figure id="id11591660"><media id="id7664996" alt=""><image src="../../media/graphics1-9c3e.png" mime-type="image/png" height="644" width="405"/></media>
+      <caption>
+   Structures on the "Programming | Structures" palette described in this module
+</caption></figure>
+    </section>
+    <section id="id-610872928714">
+      <title>For-Loop Structure</title>
+      <section id="id-923743876275">
+        <title>Basic concepts</title>
+        <para id="id11453004">The <term>For Loop</term> structure provides a means to repeatedly run a block of code (or <term>subdiagram</term>) for a fixed number of times. The following screencast video introduces the <term>For Loop</term> structure, including concepts such as <term>loop count terminal</term>, <term>iterator</term>, <term>loop tunnel</term>, <term>indexing, shift register</term>, and the <term>feedback node</term>. </para>
+        <figure id="id6179652"><title><link url="https://youtu.be/NYaJORadcaE" window="new">https://youtu.be/NYaJORadcaE</link> (7:38)</title><media id="eip-idm479814176" display="block" alt="LabVIEW block diagram with for-loop structure">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/NYaJORadcaE?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+<caption>[video] LabVIEW Techniques: For-Loop structure
+</caption></figure></section>
+      <section id="id-0695383350725">
+        <title>Working with arrays as inputs</title>
+        <para id="id3003096">The <term>For Loop</term> structure works efficiently with arrays. The next screencast video describes how to work with arrays that serve as inputs to the for-loop structure. Array elements can be used individually or collectively within the for-loop, depending on whether you have enabled <term>indexing</term> on the <term>loop tunnel</term>. Indexing on the output side of the for-loop can also be used to store a value (either a scalar or an array) on each iteration of the for-loop, thereby producing an array as output. Arrays can also be <term>concatenated</term>, a standard technique for constructing an audio signal from individual segments.</para>
+        <figure id="id3889916"><title><link url="https://youtu.be/r-Jlg7N0zhE" window="new">https://youtu.be/r-Jlg7N0zhE</link> (7:59)</title><media id="eip-idm543669888" display="block" alt="LabVIEW block diagram; for-loop with array input">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/r-Jlg7N0zhE?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] LabVIEW Techniques: For-Loop structure with arrays as input
+</caption></figure></section>
+    </section>
+    <section id="id-778819808738">
+      <title>While-Loop Structure</title>
+      <para id="id5054697">The <term>While Loop</term> structure is similar to the <term>For Loop</term> structure with its ability to repeatedly run a <term>subdiagram</term>, but the number of times is not fixed in advance. Instead, the while-loop structure will execute its subdiagram as long as a particular condition is true. The following screencast will show you how to use the <term>While Loop</term> structure.</para>
+      <figure id="id3772464"><title><link url="https://youtu.be/WBv3DqQ_KzI" window="new">https://youtu.be/WBv3DqQ_KzI</link> (7:11)</title><media id="eip-idm200413104" display="block" alt="LabVIEW block diagram with while-loop structure">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/WBv3DqQ_KzI?rel=0" autoplay="false" width="640" height="460"/>
+ </media><caption>[video] LabVIEW Techniques: While-Loop structure
+</caption></figure></section>
+    <section id="id-86759391208">
+      <title>Case Structure</title>
+      <para id="id11592347">The <term>Case Structure</term> provides a mechanism by which exactly one of several possible subdiagrams will be executed, depending on the value connected to the <term>selector terminal</term>. When the selector terminal is a Boolean type (either True or False), the case structure implements the “if-else” construct of text-based languages. When the selector terminal is an integer type, the case structure implements the “case” or “switch” construct of text-based languages.</para>
+      <para id="id4260485">The following screencast introduces you to the <term>Case Structure</term>. You will learn how to add and delete subdiagrams, how to choose the default subdiagram, and how to ensure that valid outputs are generated for all possible cases. The <term>Boolean</term> and <term>integer</term> data types are covered in this screencast; the next screencast describes how to work with the <term>string</term> and <term>enumerated</term> data types, which provide a user-friendly way to select cases from the front panel.</para>
+      <figure id="id7725510"><title><link url="https://youtu.be/8KIrh12-Exs" window="new">https://youtu.be/8KIrh12-Exs</link> (7:51)</title><media id="eip-idm1153260224" display="block" alt="LabVIEW block diagram with case structure">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/8KIrh12-Exs?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] LabVIEW Techniques: Case Structure with "Boolean" and "integer" 
+	data types at the selector terminal
+</caption></figure><figure id="id5687628"><title><link url="https://youtu.be/67dyMWQEQPs" window="new">https://youtu.be/67dyMWQEQPs</link> (8:17)</title><media id="eip-idm202396800" display="block" alt="LabVIEW block diagram with case structure selected by a string">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/67dyMWQEQPs?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+
+<caption>[video] LabVIEW Techniques: Case Structure with "string" and "enumerated" 
+	data types at the selector terminal
+</caption></figure></section>
+    <section id="id-420723190186"><title>MathScript Node</title><para id="id3684973">The <term>MathScript Node</term> offers a convenient way to implement a programming concept that may be otherwise difficult to implement using standard G code (i.e., creating LabVIEW block diagrams by wiring available structures and nodes). <term>MathScript</term> is a text-based programming language that uses syntax very similar to <term>MATLAB</term>. If you have prior experience with MATLAB, you can easily develop and debug a MathScript-based script in the <term>MathScript interactive window</term>, then copy the text into a MathScript node on your block diagram. After you create input and output terminals on the MathScript node, it can be connected to the rest of the block diagram as you would any other structure.</para>
+      <para id="id4091692">The following screencast video introduces you to the <term>MathScript Node</term>. The example walks you through the process to create a specialized node that accepts a scalar N as input and produces a specialized array as output.</para>
+      <figure id="id5713265"><title><link url="https://youtu.be/7sLMVhhILII" window="new">https://youtu.be/7sLMVhhILII</link> (6:03)</title><media id="eip-idm195528432" display="block" alt="LabVIEW block diagram with MathScript node">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/7sLMVhhILII?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] LabVIEW Techniques: MathScript node and MathScript Interactive Window
+</caption></figure><code id="eip-6" display="block">
+% Create a triangle array
+x = [linspace(0,1,N/2) linspace(1,0,N/2)]
+<caption>The screencast in this section (just above) walks through creation of a LabVIEW VI that includes a MathScript node that will invoke this .m file script.</caption></code><figure id="id571326342"><media id="id12341314123123124123" alt="">
+  <image mime-type="image/png" src="../../media/MathScriptNodeExercise.png"/>
+</media>
+<caption>The screencast in this section (just above) describes how to build a VI that includes a MathScript node.</caption></figure>
+
+
+    </section>
+    <section id="id-752855041682">
+      <title>Diagram-Disable Structure</title>
+      <para id="id4131598">You probably have used the software debugging technique known as “commenting out” a block of code; you do this so that you can effectively remove a portion of code without actually deleting it from the file. Watch the next screencast video to learn how to use the <term>Diagram Disable </term>structure to “comment out” a portion of your LabVIEW block diagram.</para>
+      <figure id="id4970101"><title><link url="https://youtu.be/rV3SSH05ARQ" window="new">https://youtu.be/rV3SSH05ARQ</link> (5:10)</title><media id="eip-idm696266144" display="block" alt="LabVIEW block diagram with 'diagram disable' structure">
+<video mime-type="video/mpeg" src="https://www.youtube.com/embed/rV3SSH05ARQ?rel=0" autoplay="false" width="640" height="460"/>
+ </media>
+
+<caption>[video] LabVIEW Techniques: Use Diagram-Disable structure to "comment out" a section of code
+</caption></figure></section>
+  </content>
+</document>

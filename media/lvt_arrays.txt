@@ -1,0 +1,57 @@
+Title: Arrays in LabVIEW 
+
+Summary: Learn how to create and manipulate arrays, perform mathematical
+operations on them, and use spreadsheets to read and write arrays to the
+file system.
+
+Keywords (one per line): 
+array
+array control
+array constant
+array dimensions
+index
+subarray
+reshape
+Ramp Pattern
+spreadsheet
+CSV
+LabVIEW
+
+
+CNXML for figures:
+
+---------------------------------------
+
+<media type="image/png" src="lvt_arrays-creating.html">
+          <param name="thumbnail" value="lvt_arrays-creating.png"/>
+        </media>
+<caption>
+   [video] Creating arrays
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_arrays-manipulating.html">
+          <param name="thumbnail" value="lvt_arrays-manipulating.png"/>
+        </media>
+<caption>
+   [video] Manipulating arrays
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_arrays-math.html">
+          <param name="thumbnail" value="lvt_arrays-math.png"/>
+        </media>
+<caption>
+   [video] Performing mathematical operations with arrays
+</caption>
+
+---------------------------------------
+
+<media type="image/png" src="lvt_arrays-spreadsheet.html">
+          <param name="thumbnail" value="lvt_arrays-spreadsheet.png"/>
+        </media>
+<caption>
+   [video] Retrieving arrays from a spreadsheet; saving arrays to a spreadsheet
+</caption>
