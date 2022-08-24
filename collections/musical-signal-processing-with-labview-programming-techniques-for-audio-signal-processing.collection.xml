@@ -1,12 +1,13 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Ed Doering">
   <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
     <md:content-id>col10440</md:content-id>
     <md:title>Musical Signal Processing with LabVIEW -- Programming Techniques for Audio Signal Processing</md:title>
     <md:language>en</md:language>
     <md:license url="http://creativecommons.org/licenses/by/2.0/">Creative Commons Attribution License</md:license>
     <md:uuid>8bb5d4ee-b298-43c1-9921-861cfea09db3</md:uuid>
-<md:slug>musical-signal-processing-with-labview-programming-techniques-for-audio-signal-processing</md:slug>
-</metadata>
+    <md:slug>musical-signal-processing-with-labview-programming-techniques-for-audio-signal-processing</md:slug>
+  </metadata>
   <col:content>
     <col:subcollection>
       <md:title>Programming Tutorials</md:title>
